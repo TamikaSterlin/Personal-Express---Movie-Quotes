@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="parent">
+
+    <h1>Favorite Movie Quotes!</h1>
+
+
+
+    <ul class="messages">
+      <% for(var i=0; i<messages.length; i++) {%>
+      <li class="message">
+        <span class="name"><%= messages[i].name %></span>
+        <span><%= messages[i].msg %></span>
+        <span><%= messages[i].thumbUp %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><%= messages[i].thumbDown %></span>
+        <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+      </li>
+      <% } %>
+    </ul>
+
+    <!-- <h2>Add a message</h2> -->
+
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="Movie Name" name="name">
+      <input type="text" placeholder="Favorite Quote" name="msg">
+      <button type="submit">Enter</button>
+    </form>
+  </section>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

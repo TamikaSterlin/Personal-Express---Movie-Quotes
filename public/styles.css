@@ -1,0 +1,33 @@
+body {
+  background: lavender;
+  font-size: 62.5;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'New Tegomin', serif;
+  font-size: 3rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+.parent {
+  border: 3px solid white;
+  width: 50%;
+  padding: 20px;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 100px;
+}
